@@ -1,0 +1,32 @@
+﻿@model IEnumerable<WebApplication2.Models.UploadSuccessViewModel>
+
+<h2>Le fichier a été correctement chargé</h2>
+<p>Distance (en km) pour l'ensemble des adresses présentes dans le fichier : @Html.Raw(ViewBag.FileContent)</p>
+
+
+<p>Liste des distances pour chaque adresse : </p>
+
+ @{foreach (var d in Model)
+  {
+      // <li>@d.Adresse :  @d.Distance km </li>
+      <div class="table-responsive-sm">  
+      <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td scope="row">@d.Adresse</td>
+                <td>@d.Distance</td>
+            </tr>
+            </tbody>
+        </table>
+        </div>
+  }
+  } 
+
+@ViewBag.Line
+<a href="@Url.Action("Upload", "FileUpload")">Upload another file</a>

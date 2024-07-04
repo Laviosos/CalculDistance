@@ -1,0 +1,23 @@
+﻿@model WebApplication2.Models.FileUploadViewModel
+
+@using (Html.BeginForm("Upload", "FileUpload", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="form-group">
+        <label asp-for="AdresseEntreprise" class="control-label"></label>
+        <input asp-for="AdresseEntreprise" class="form-control" type="texte" />
+        <span asp-validation-for="AdresseEntreprise" class="text-danger"></span>
+        <label asp-for="CleApi" class="control-label"></label>
+        <input asp-for="CleApi" class="form-control" type="texte" />
+        <span asp-validation-for="CleApi" class="text-danger"></span>
+        <label asp-for="UploadedFile" class="control-label"></label>
+        <input asp-for="UploadedFile" class="form-control" type="file" />
+        <span asp-validation-for="UploadedFile" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Upload</button>
+}
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
