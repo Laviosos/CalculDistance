@@ -253,6 +253,10 @@
       "PackagePath": "staticwebassets\\uploads\\Adresses.txt"
     },
     {
+      "Id": "C:\\Users\\julie\\Desktop\\POEC\\WebApplication2\\WebApplication2\\wwwroot\\uploads\\Fichier d'importation - Feuille 1.csv",
+      "PackagePath": "staticwebassets\\uploads\\Fichier d'importation - Feuille 1.csv"
+    },
+    {
       "Id": "C:\\Users\\julie\\Desktop\\POEC\\WebApplication2\\WebApplication2\\wwwroot\\uploads\\Trajets - Feuille 1 (2).csv",
       "PackagePath": "staticwebassets\\uploads\\Trajets - Feuille 1 (2).csv"
     },

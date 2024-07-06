@@ -223,17 +223,6 @@ C:\Users\IB\Desktop\Prise de Note\Csharp\Projet1\WebApplication2\WebApplication2
 C:\Users\IB\Desktop\Prise de Note\Csharp\Projet1\WebApplication2\WebApplication2\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 C:\Users\IB\Desktop\Prise de Note\Csharp\Projet1\WebApplication2\WebApplication2\obj\Debug\net8.0\WebApplication2.csproj.AssemblyReference.cache
 C:\Users\IB\Desktop\Prise de Note\Csharp\Projet1\WebApplication2\WebApplication2\obj\Debug\net8.0\WebAppli.0DB3FC1A.Up2Date
-C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Debug\net8.0\WebApplication2.csproj.AssemblyReference.cache
-C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Debug\net8.0\WebApplication2.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Debug\net8.0\WebApplication2.AssemblyInfoInputs.cache
-C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Debug\net8.0\WebApplication2.AssemblyInfo.cs
-C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Debug\net8.0\WebApplication2.csproj.CoreCompileInputs.cache
-C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Debug\net8.0\WebApplication2.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Debug\net8.0\WebApplication2.RazorAssemblyInfo.cache
-C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Debug\net8.0\WebApplication2.RazorAssemblyInfo.cs
-C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Debug\net8.0\WebApplication2.dll
-C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Debug\net8.0\refint\WebApplication2.dll
-C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Debug\net8.0\WebApplication2.pdb
 C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\bin\Debug\net8.0\appsettings.json
 C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\bin\Debug\net8.0\WebApplication2.staticwebassets.runtime.json
@@ -242,6 +231,7 @@ C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\bin\Debug\net8.0\Web
 C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\bin\Debug\net8.0\WebApplication2.runtimeconfig.json
 C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\bin\Debug\net8.0\WebApplication2.dll
 C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\bin\Debug\net8.0\WebApplication2.pdb
+C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\bin\Debug\net8.0\CsvHelper.dll
 C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\bin\Debug\net8.0\Humanizer.dll
 C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -435,6 +425,15 @@ C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\bin\Debug\net8.0\run
 C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Debug\net8.0\WebApplication2.csproj.AssemblyReference.cache
+C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Debug\net8.0\WebApplication2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Debug\net8.0\WebApplication2.AssemblyInfoInputs.cache
+C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Debug\net8.0\WebApplication2.AssemblyInfo.cs
+C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Debug\net8.0\WebApplication2.csproj.CoreCompileInputs.cache
+C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Debug\net8.0\WebApplication2.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Debug\net8.0\WebApplication2.RazorAssemblyInfo.cache
+C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Debug\net8.0\WebApplication2.RazorAssemblyInfo.cs
+C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Debug\net8.0\WebApplication2.sourcelink.json
 C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Debug\net8.0\staticwebassets\msbuild.WebApplication2.Microsoft.AspNetCore.StaticWebAssets.props
@@ -446,7 +445,8 @@ C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Debug\net8.0\sco
 C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Debug\net8.0\scopedcss\bundle\WebApplication2.styles.css
 C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Debug\net8.0\scopedcss\projectbundle\WebApplication2.bundle.scp.css
 C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Debug\net8.0\WebAppli.0DB3FC1A.Up2Date
+C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Debug\net8.0\WebApplication2.dll
+C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Debug\net8.0\refint\WebApplication2.dll
+C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Debug\net8.0\WebApplication2.pdb
 C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Debug\net8.0\WebApplication2.genruntimeconfig.cache
 C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Debug\net8.0\ref\WebApplication2.dll
-C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\bin\Debug\net8.0\CsvHelper.dll
-C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Debug\net8.0\WebApplication2.sourcelink.json

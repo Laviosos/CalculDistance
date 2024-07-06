@@ -5,6 +5,7 @@ C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Release\net8.0\P
 C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Release\net8.0\PubTmp\Out\WebApplication2.deps.json
 C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Release\net8.0\PubTmp\Out\WebApplication2.runtimeconfig.json
 C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Release\net8.0\PubTmp\Out\WebApplication2.pdb
+C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Release\net8.0\PubTmp\Out\CsvHelper.dll
 C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Release\net8.0\PubTmp\Out\Humanizer.dll
 C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Release\net8.0\PubTmp\Out\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\julie\Desktop\POEC\WebApplication2\WebApplication2\obj\Release\net8.0\PubTmp\Out\Microsoft.Bcl.AsyncInterfaces.dll

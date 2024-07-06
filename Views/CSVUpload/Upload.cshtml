@@ -2,18 +2,83 @@
 
 @using (Html.BeginForm("Upload", "CSVUpload", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
-    <div class="form-group">
-        <label asp-for="AdresseEntreprise" class="control-label"></label>
-        <input asp-for="AdresseEntreprise" class="form-control" type="texte" />
-        <span asp-validation-for="AdresseEntreprise" class="text-danger"></span>
-        <label asp-for="CleApi" class="control-label"></label>
-        <input asp-for="CleApi" class="form-control" type="texte" />
-        <span asp-validation-for="CleApi" class="text-danger"></span>
-        <label asp-for="UploadedFile" class="control-label"></label>
-        <input asp-for="UploadedFile" class="form-control" type="file" />
-        <span asp-validation-for="UploadedFile" class="text-danger"></span>
-    </div>
-    <button type="submit" class="btn btn-primary">Upload</button>
+
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <title>Formulaire Design</title>
+        <style>
+            html{
+                display :flex;
+                align-items: flex-start;
+                justify-content: center;
+                margin-top: 50px;
+            }
+            body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+            width: 50%;
+            }
+            .container {
+            margin-top: 50px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+            }
+            .form-group label {
+            font-weight: bold;
+            }
+            .form-group input {
+            margin-bottom: 10px;
+            }
+            .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            }
+            .link-container {
+            margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="form-group">
+                <label asp-for="AdresseEntreprise" class="control-label">Adresse de l'Entreprise</label>
+                <input asp-for="AdresseEntreprise" class="form-control" type="text" placeholder="Entrez l'adresse de l'entreprise" />
+                <span asp-validation-for="AdresseEntreprise" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CleApi" class="control-label">Clé API</label>
+                <input asp-for="CleApi" class="form-control" type="text" placeholder="Entrez la clé API" />
+                <span asp-validation-for="CleApi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UploadedFile" class="control-label">Fichier à télécharger</label>
+                <input asp-for="UploadedFile" class="form-control" type="file" />
+                <span asp-validation-for="UploadedFile" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Générer les résultats</button>
+
+            <div class="link-container">
+                <a href="https://docs.google.com/spreadsheets/d/1gv2EKd96WMtPiSs5B76F2JY05k7thThLDkBV0ubcTB0/edit?usp=sharing" class="btn btn-link">Lien vers la trame du fichier CSV</a>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src=""https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js""></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    </body>
+    </html>
+
+
+
 }
 
 @section Scripts {
