@@ -13,6 +13,9 @@ using Newtonsoft.Json.Linq;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
 using Microsoft.CodeAnalysis;
 using Microsoft.VisualBasic.FileIO;
+using System.Security.Principal;
+using System.Globalization;
+using CsvHelper;
 
 namespace WebApplication2.Controllers
 {
@@ -59,7 +62,10 @@ namespace WebApplication2.Controllers
 
                         }
                     }
-
+                    //Suppression de l'entête du CSV
+                    csvadres.RemoveAt(0);
+                    nballerretour.RemoveAt(0);
+                    locomotion.RemoveAt(0);
                     //Calcul des émissions par moyen de transport
                     var Voiture = new FacteurEmission { EqCO2 = 0.231, MoyenDeTransport = "Voiture"};
                     var TrainGrandeLigne = new FacteurEmission { MoyenDeTransport = "TrainGrandeLigne", EqCO2 = 5.92e-3 };
@@ -87,6 +93,7 @@ namespace WebApplication2.Controllers
                     string cleApi = model.CleApi;
                     using HttpClient client = new HttpClient();
                     List<double> distances = new List<double>();
+                    List<ResultatDetaille> resultatDetailles = new List<ResultatDetaille>();
                     int i = 0;
                     foreach (string s in csvadres)
                     {
@@ -102,19 +109,49 @@ namespace WebApplication2.Controllers
                             string d = jsonString.Substring(indexDebut + 9);
                             int indexFin = d.IndexOf("\n");
                             string dis = d.Remove(indexFin);
-                            int distance = int.Parse(dis);
+                            double distance = int.Parse(dis)/1000;
                             int nbar = int.Parse(nballerretour[i]);
-                            double loc = double.Parse(locomotion[i]);
-                            double distancea = distance * nbar * loc;
-                            distances.Add(distancea);
+
+                            var eqCO2 = ListMoyenTransport.Where(a => a.MoyenDeTransport == locomotion[i]).Select(a => a.EqCO2).FirstOrDefault();
+                            
+                            var resultatdetaille = new ResultatDetaille
+                            {
+                                AdresseEmploye = s,
+                                NombreAllerRetour = nbar,
+                                MoyenDeTransport = locomotion[i],
+                                EqCO2 = eqCO2,
+                                DistanceUnitaire = distance,
+                                DistanceAnnuelle = distance*nbar,
+                                EmissionAnuelle = distance*nbar*eqCO2
+                            };
+                            resultatDetailles.Add(resultatdetaille);
+
                             i++;
 
+                            ////A supprimer après la mise en place du CSV
+                            //double loc = double.Parse(locomotion[i]);
+                            //double distancea = distance * nbar * loc;
+                            //distances.Add(distancea);
+                            
                         }
                         else
                         {
                             Console.WriteLine("");
                         }
                     }
+
+                    //On ajoute ensuite tous les résultats au csv
+                    using (var memoryStream = new MemoryStream())
+                    using (var writer = new StreamWriter(memoryStream))
+                    using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
+                    {
+                        csv.WriteRecords(resultatDetailles);
+                        writer.Flush();
+                        var byteArray = memoryStream.ToArray();
+                        return File(byteArray, "text/csv", "file.csv");
+                    }
+
+                    //A supprimer avec l'ajout du CSV ? 
                     //Calcul de la sommme des distances 
                     double distanceglobale = 0;
                     foreach (var s in distances)
@@ -145,5 +182,18 @@ namespace WebApplication2.Controllers
         public string MoyenDeTransport { get; set; }
         //kg éq. CO2/km
         public double EqCO2 { get; set; }
+    }
+    public class ResultatDetaille
+    {
+        public string AdresseEmploye { get; set; }
+        public string MoyenDeTransport { get; set; }
+        //kg éq. CO2/km
+        public double EqCO2 { get; set; }
+        public double DistanceUnitaire { get; set; }
+        public int NombreAllerRetour { get; set; }
+        public double DistanceAnnuelle { get; set; }
+        public double EmissionAnuelle { get; set; }
+
+
     }
 }

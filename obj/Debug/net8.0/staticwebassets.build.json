@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dm10LRsAQ6J+Un2dugE1lK1hP+X2aj52DawkUFDWNME=",
+  "Hash": "R3Qpzp+DxrF4aKBmZnzbO/iyLheAM/4I4pmNhks3yUU=",
   "Source": "WebApplication2",
   "BasePath": "_content/WebApplication2",
   "Mode": "Default",
@@ -1231,6 +1231,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\Adresses.txt"
+    },
+    {
+      "Identity": "C:\\Users\\julie\\Desktop\\POEC\\WebApplication2\\WebApplication2\\wwwroot\\uploads\\Fichier d'importation - Feuille 1.csv",
+      "SourceId": "WebApplication2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\julie\\Desktop\\POEC\\WebApplication2\\WebApplication2\\wwwroot\\",
+      "BasePath": "_content/WebApplication2",
+      "RelativePath": "uploads/Fichier d'importation - Feuille 1.csv",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\Fichier d'importation - Feuille 1.csv"
     },
     {
       "Identity": "C:\\Users\\julie\\Desktop\\POEC\\WebApplication2\\WebApplication2\\wwwroot\\uploads\\Trajets - Feuille 1 (2).csv",
